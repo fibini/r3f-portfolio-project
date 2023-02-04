@@ -1,4 +1,4 @@
-import { PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
+import { Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
 
 export default function Experience()
 {
@@ -25,8 +25,26 @@ export default function Experience()
                 <primitive 
                     object={ computer.scene }
                     position-y={ -1.2 }
-                />
+                >
+                    <Html 
+                        transform
+                        wrapperClass='portfolioScreen'
+                        distanceFactor={ 1.17 }
+                        position={[0, 1.56, -1.4]}
+                        rotation-x={ -0.256 }
+                    >
+                        <iframe src="https://fibini.github.io/Portfolio-project/"/>
+
+                    </Html>
+                </primitive>
             </Float>
         </PresentationControls>
+
+        <ContactShadows
+         position-y={ -1.4}
+         opacity={ 0.6}
+         scale={5}
+         blur={2}
+         />
     </>
 }
