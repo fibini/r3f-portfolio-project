@@ -1,4 +1,4 @@
-import { Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
+import { Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF } from '@react-three/drei'
 
 export default function Experience()
 {
@@ -45,6 +45,15 @@ export default function Experience()
 
                     </Html>
                 </primitive>
+                <Text
+                    font='./bangers-v20-latin-regular.woff'
+                    fontSize={1}
+                    position={[2, 0.75, 0.75]}
+                    rotation-y={ -1.25}
+                    maxWidth={2}
+                    textAlign="center"
+                 >
+                    FABIEN PORTFOLIO</Text>
             </Float>
         </PresentationControls>
 
